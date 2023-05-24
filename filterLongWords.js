@@ -7,10 +7,15 @@
 
 function filterLongWords(sentence, n) {
   //Solution here
+  let arraySentece = sentence.split(" ");
+  let moreThanN = arraySentece.filter((word) => word.length >= n);
+  console.log("hola", moreThanN);
 }
 
-console.log(filterLongWords("The quick brown fox jumps over the lazy dog", 4), [
+console.log(filterLongWords("The quick brown fox jumps over the lazy dog", 5), [
   "quick",
   "brown",
   "jumps",
 ]);
+
+
